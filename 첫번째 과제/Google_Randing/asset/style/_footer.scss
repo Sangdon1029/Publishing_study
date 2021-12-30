@@ -1,0 +1,25 @@
+    #footer {
+        background-color: var(--bg-color-4);
+        width: 100vw;
+        height: 20%;
+        margin-top: 16%;
+        strong {
+            display: block;
+            width: inherit;
+            color: #fff;
+            border-bottom: 1px solid var(--bg-color-3);
+            padding: 15px 20px;
+        }
+        .fo-fo {
+            display: flex;
+            color: var(--bg-color-1);
+            justify-content: space-between;
+            padding: 20px 20px;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }

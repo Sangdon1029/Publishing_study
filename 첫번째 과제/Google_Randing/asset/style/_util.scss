@@ -1,0 +1,28 @@
+.sr-only {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    padding: -10px;
+}
+
+:root {
+    --bg-color-1: #bdc1c6;
+    --bg-color-2: rgba(32,33,36,1);
+    --bg-color-3: #464444;
+    --bg-color-4: #171717;
+    --bg-color-5: #303134;
+    --bg-color-6: #4b4e52;
+}
+
+a {
+    color: var(--bg-color-1);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,241 @@
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  padding: -10px;
+}
+
+:root {
+  --bg-color-1: #bdc1c6;
+  --bg-color-2: rgba(32,33,36,1);
+  --bg-color-3: #464444;
+  --bg-color-4: #171717;
+  --bg-color-5: #303134;
+  --bg-color-6: #4b4e52;
+}
+
+a {
+  color: var(--bg-color-1);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg-color-2);
+}
+
+#header {
+  width: 100vw;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 16px 30px 28px;
+}
+
+#header .about-google {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .about-google li:first-child {
+  margin-right: 20px;
+}
+
+#header .user-intf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .user-intf li button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  background-color: transparent;
+}
+
+#header .user-intf li button:hover {
+  background-color: var(--bg-color-3);
+}
+
+#header .user-intf li button .ico-more {
+  width: 20px;
+  height: 20px;
+}
+
+#header .user-intf li button .ico-user {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+}
+
+#main {
+  width: 100vw;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#main .div-wrap {
+  position: relative;
+}
+
+#main .div-wrap::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/desktop_searchbox_sprites318_hr.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+#main .g-logo {
+  width: 380px;
+}
+
+#main .inp-search {
+  width: 580px;
+  height: 45px;
+  border-radius: 20px;
+  margin-top: 28px;
+  padding: 6px;
+  background-color: transparent;
+  border: 1px solid var(--bg-color-6);
+  text-indent: 50px;
+}
+
+#main .inp-search:hover, #main .inp-search:focus, #main .inp-search:active {
+  background-color: var(--bg-color-5);
+  border: none;
+}
+
+#main button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+#main button .srh-mic {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: -15px;
+  left: -50px;
+}
+
+#main button .srh-key {
+  width: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  left: -70px;
+}
+
+#main .main-ft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+#main .main-ft button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--bg-color-2);
+  background-color: var(--bg-color-3);
+  color: #fff;
+}
+
+#main .main-ft button:first-child {
+  margin-right: 30px;
+}
+
+#main .main-ft button:hover {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 1px solid var(--bg-color-1);
+}
+
+#footer {
+  background-color: var(--bg-color-4);
+  width: 100vw;
+  height: 20%;
+  margin-top: 16%;
+}
+
+#footer strong {
+  display: block;
+  width: inherit;
+  color: #fff;
+  border-bottom: 1px solid var(--bg-color-3);
+  padding: 15px 20px;
+}
+
+#footer .fo-fo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--bg-color-1);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px;
+}
+
+#footer .fo-fo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .fo-fo ul li {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=style.css.map */

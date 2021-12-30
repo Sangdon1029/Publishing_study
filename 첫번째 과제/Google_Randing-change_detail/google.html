@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+     <link rel="stylesheet" href="./asset/style/google.css">
+     <link rel="stylesheet" href="./asset/style/reset.css">
+     <title>Google</title>
+<head>
+<body>
+    <header id="header">
+        <h1 class="sr-only">Welcome to Google</h1>
+        <ul class="about-google">
+            <li><a href="#">Google Info</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+        <ul class="user-intf">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">image</a></li>
+            <li><button><img src="./asset/img/icon-dot-hamber.svg" alt="사용자 프로그램 더 보기" class="ico-more"></button></li>
+            <li><button><img src="./asset/img/unnamed.png" alt="사용자 이미지 입니다." class="ico-user"></button></li>
+        </ul>
+    </header>
+    <main id="main">
+        <img src="./asset/img/seasonal-holidays-2021-6753651837109324.3-ladc.gif" alt="Google로고 입니다." class="g-logo">
+        <form action="get" >
+            <div class="div-wrap">
+                <input type="text" name="search" id="search" class="inp-search">
+                <label for="search" class="inp-search-label">
+                    <button type="button"><img src="./asset/img/tia.png" alt="키보드로 검색하기" class="srh-key"></button>
+                    <button type="button"><img src="./asset/img/google-mic.svg" alt="음석으로 검색하기" class="srh-mic"></button>
+                </label>
+            </div>
+            <div class="main-ft">
+                <ul class="icon-link-lis">
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                    <li class="icon-link-items">
+                        <figure class="link-img-cont">
+                            <img src="../asset/img/icon-plus.png" alt="logo">
+                        </figure>
+                        <button class="btn-on" type="button"><img src="../asset/img/icon-single-dot.svg" alt="edit"></button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </main>
+    <footer id="footer">
+        <ul class="foot-cont">
+            <li class="img-src-link">
+                <a>Faula Thierry님의 사진</a>
+            </li>
+            <li class="img-upload">
+                <button class="btn-upload"><img src="../asset/img/icon-pencil.svg" alt="upload"></button>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        const link_items = document.querySelectorAll('.icon-link-items');
+        const btn_on = document.querySelectorAll('.btn-on');
+        // const disp = (par)=>{
+        //     par.forEach(e => {
+        //         console.log(e);
+        //     e.style.display = 'block';
+        //     })
+        // }
+        // const liston = 
+        // link_items.forEach( (x) => {
+        //     console.log(x);
+        //     x.addEventListener('mouseover', disp(btn_on));
+        // });
+        document.addEventListener('DOMContentLoaded', ()=>{
+            for(i=0; i<link_items.length; i ++){
+                link_items[i].addEventListener('mouseover',()=>{
+                    btn_on[i];
+                    console.log(btn_on[i]);
+                });
+        }});
+
+
+
+    </script>
+</body>
+</html>
