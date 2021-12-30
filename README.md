@@ -3,11 +3,11 @@
 ## Google_rending-page
 
 - 화면 전체 페이지입니다.
-![Screen](../readme_asset/screen.png)
-
+ 
+-![Uploading screen.png…]()
 
 - 오류 사항입니다.
-![Screen](../readme_asset/error.png)
+<img width="130" alt="error" src="https://user-images.githubusercontent.com/93380732/147726909-9584c334-df28-4927-9447-2a56ada7dfd7.png">
 
 
 <br>
