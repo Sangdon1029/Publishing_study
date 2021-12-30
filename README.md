@@ -1,6 +1,7 @@
 # Publishing_study
 
-[페이지 바로 보기](https://sangdon1029.github.io/Publishing_study/%EC%B2%AB%EB%B2%88%EC%A7%B8%20%EA%B3%BC%EC%A0%9C/Google_Randing-change_detail/google.html)
+[첫번째 페이지 바로 보기](https://sangdon1029.github.io/Publishing_study/%EC%B2%AB%EB%B2%88%EC%A7%B8%20%EA%B3%BC%EC%A0%9C/Google_Randing-change_detail/google.html)
+[두번째 페이지 바로 보기](https://sangdon1029.github.io/Publishing_study/%EC%B2%AB%EB%B2%88%EC%A7%B8%20%EA%B3%BC%EC%A0%9C/Google_Randing/index.html)
 ## Google_rending-page
 
 - 화면 전체 페이지입니다.
