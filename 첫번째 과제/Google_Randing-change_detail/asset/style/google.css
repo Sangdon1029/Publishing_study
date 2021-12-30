@@ -272,6 +272,10 @@ body {
   height: 20px;
 }
 
+#main .main-ft .icon-link-lis .icon-link-items button.on {
+  display: block;
+}
+
 #footer {
   width: 100vw;
   padding: 20px 2%;
@@ -311,7 +315,7 @@ body {
   left: -30px;
   width: 30px;
   height: 30px;
-  background-image: url(/asset/img/icon-link.svg);
+  background-image: url(../img/icon-link.svg);
   background-repeat: no-repeat;
   z-index: 10;
 }
