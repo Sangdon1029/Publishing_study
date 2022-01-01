@@ -3,7 +3,18 @@
 [첫번째 페이지 바로 보기](https://sangdon1029.github.io/Publishing_study/%EC%B2%AB%EB%B2%88%EC%A7%B8%20%EA%B3%BC%EC%A0%9C/Google_Randing-change_detail/google.html)
 <br>
 [두번째 페이지 바로 보기](https://sangdon1029.github.io/Publishing_study/%EC%B2%AB%EB%B2%88%EC%A7%B8%20%EA%B3%BC%EC%A0%9C/Google_Randing/index.html)
+<br>
+[navermain](https://sangdon1029.github.io/Publishing_study/naver_agree.html) 마크업만 진행하였습니다
+<br>
+[naverhome](https://sangdon1029.github.io/Publishing_study/naver_home.html) 마크업만 진행하였습니다
+<br>
+[naverinfo](https://sangdon1029.github.io/Publishing_study/naver_info.html) 마크업만 진행하였습니다
+
+<hr>
+
 ## Google_rending-page
+
+
 
 - 화면 전체 페이지입니다.
 
