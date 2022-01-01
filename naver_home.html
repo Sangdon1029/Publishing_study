@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver_home</title>
+</head>
+<body>
+    <header>
+        <!--h1태그가 없어서 임의로 넣었습니다.-->
+        <h1 class="sr-only">네이버 더 좋은 검색 웨일을 사용해보세요</h1>
+        <nav class="skip-nav">
+            <ul>
+                <!--<li>검색하기 바로가기<li>-->
+                <li><a href="#">뉴스스탠드 바로가기</a></li>
+                <li><a href="#">주제별캐스트 바로가기</a></li>
+                <li><a href="#">타임스퀘어 바로가기</a></li>
+                <li><a href="#">쇼핑캐스트 바로가기</a></li>
+                <li><a href="#">로그인 바로가기</a></li>
+            </ul>
+        </nav>
+        <div class="three-day-skip">
+            <img src="" alt="NAVER whale '그냥 좋던데요 웨일?' 제일 어려운 찬사 획득했습니다">
+            <a href="#">다운로드</a>
+            <button type="button">3일 동안 보지 않기</button>
+        </div>
+    </header>
+    <main>
+        <div class="top-function">
+            <a href="#">네이버를 시작페이지로</a>
+            <a href="#">쥬니어네이버</a>
+            <a href="#">해피빈</a>
+        </div>
+        <form action="get">
+            <fieldset>
+                <legend>검색</legend>
+                <select name="search" id="search-opt">
+                    <option value="default">통합검색</option>
+                    <option value="blog">블로그</option>
+                    <option value="cafe">카페</option>
+                    <option value="news">뉴스</option>
+                </select>
+                <input type="search">
+                <button type="submit" id="search-submit"></button>
+                <label for="search-submit"><img src="" alt="after로 배경요소 검색"></label>
+            </fieldset>
+            <button type="button">한글입력기</button>
+            <button type="button">자동완성 레이어</button>
+        </form>
+        <nav class="gnb">
+            <ul>
+                <li>메일</li>
+                <li>카페</li>
+                <li>블로그</li>
+                <li>지식iN</li>
+                <li>쇼핑</li>
+                <li>쇼핑LIVE</li>
+                <li>Pay</li>
+                <li>TV</li>
+            </ul>
+            <ul>
+                <li>사전</li>
+                <li>뉴스</li>
+                <li>증권</li>
+                <li>부동산</li>
+                <li>지도</li>
+                <li>VIBE</li>
+                <li>책</li>
+                <li>웹툰</li>
+            </ul>
+            <button type="button">더보기</button>
+            <div class="nav-more-cont">
+                <dl>
+                    <dt>ㄱ-ㅁ</dt>
+                    <dd>날씨</dd>
+                    <dd>네이버 MY CAR</dd>
+                    <dd>네이버 게임</dd>
+                    <dd>네이버 예약</dd>
+                    <dd>네이버 프리미엄콘텐츠</dd>
+                    <dd>네이버플러스 멤버십</dd>
+                    <dd>뉴스</dd>
+                    <dd>데이터랩</dd>
+                    <dd>메모</dd>
+                    <dt>ㅂ-ㅅ</dt>
+                    <dd>밴드</dd>
+                    <dd>부동산</dd>
+                    <dd>북마크</dd>
+                    <dd>스포츠</dd>
+                    <dd>시리즈</dd>
+                    <dd>시리즈온</dd>
+                    <dt>ㅇ</dt>
+                    <dd>엑스퍼트</dd>
+                    <dd>영화</dd>
+                    <dd>오디오클립</dd>
+                    <dd>오피스</dd>
+                    <dd>웨일</dd>
+                    <dt>ㅈ-ㅊ</dt>
+                    <dd>자동차</dd>
+                    <dd>주소록</dd>
+                    <dd>지도</dd>
+                    <dd>지식백과</dd>
+                    <dd>책</dd>
+                    <dt>ㅋ-ㅎ</dt>
+                    <dd>캘린더</dd>
+                    <dd>클로바더빙</dd>
+                    <dd>파파고</dd>
+                    <dd>포스트</dd>
+                    <dd>학술정보</dd>
+                    <dd>항공권</dd>
+                    <dd>호텔</dd>
+                    <dt>A-Z</dt>
+                    <dd>Keep</dd>
+                    <dd>modoo!</dd>
+                    <dd>MYBOX</dd>
+                    <dd>MY구독</dd>
+                    <dd>TVdusdP</dd>
+                    <dd>V LIVE</dd>
+                    <dd>VIBE</dd>
+                </dl>
+                <!--네이버 메인 화면에서는 보이지 않습니다.-->
+                <dl>
+                    <dt>ㄱ-ㅁ</dt>
+                    <dd>
+                        <label for="날씨"><input id="날씨" type="checkbox"> 날씨</label>
+                    </dd>
+                    <dd>
+                        <label for="네이버MYCAR"><input id="네이버MYCAR" type="checkbox">네이버MYCAR</label>
+                    </dd>
+                    <dd>
+                        <label for="네이버 게임"><input id="네이버 게임" type="checkbox">네이버 게임</label>
+                    </dd>
+                    <dd>
+                        <label for="네이버 예약"><input id="네이버 예약" type="checkbox">네이버 예약</label>
+                    </dd>
+                    <dd>
+                        <label for="프리미엄콘텐츠"><input id="프리미엄콘텐츠" type="checkbox">프리미엄콘텐츠</label>
+                    </dd>
+                    <dt>ㅂ-ㅅ</dt>
+                    <dd>
+                        <label for="밴드"><input id="밴드" type="checkbox">밴드</label>
+                    </dd>
+                    <dd>
+                        <label for="부동산"><input id="부동산" type="checkbox">부동산</label>
+                    </dd>
+                    <dd>
+                        <label for="북마크"><input id="북마크" type="checkbox">북마크</label>
+                    </dd>
+                    <dd>
+                        <label for="스포츠"><input id="스포츠" type="checkbox">스포츠</label>
+                    </dd>
+                    <dd>
+                        <label for="시리즈"><input id="시리즈" type="checkbox">시리즈</label>
+                    </dd>
+                    <dt>ㅇ</dt>
+                    <dd>
+                        <label for="엑스퍼트"><input id="엑스퍼트" type="checkbox">엑스퍼트</label>
+                    </dd>
+                    <dd>
+                        <label for="부동산"><input id="부동산" type="checkbox">부동산</label>
+                    </dd>
+                    <dd>
+                        <label for="북마크"><input id="북마크" type="checkbox">북마크</label>
+                    </dd>
+                    <dd>
+                        <label for="스포츠"><input id="스포츠" type="checkbox">스포츠</label>
+                    </dd>
+                    <dd>
+                        <label for="시리즈"><input id="시리즈" type="checkbox">시리즈</label>
+                    </dd>
+                    <!--중략-->
+                </dl>
+            </div>
+        </nav>
+        <article class="new-stand">
+            <h2>뉴스스탠드</h2>
+            <a href="#">연합뉴스</a>
+            <ul>
+                <li>가상 DOM</li>
+                <li>가상 DOM</li>
+                <li>가상 DOM</li>
+            </ul>
+            <div class="news-nav">
+                <a href="#">뉴스 홈</a>
+                <a href="#">연예</a>
+                <a href="#">스포츠</a>
+                <a href="#">경제</a>
+            </div>
+            <a href="#">뉴스스탠드</a>
+            <div>
+                <button type="button">구독한 언론사</button> 
+                <button type="button" id="전체-언론사">전체 언론사</button>
+            </div>
+            <!--누르면 전환되는 부분인데 button이 아닌 이유가 궁금합니다.-->
+            <label for="전체-언론사">
+            <div class="news-sort">
+                <button><img src="" alt="리스트형"></button>
+                <button><img src="" alt="썸네일형"></button>
+            </div>
+            <div>
+                <button type="button"><img src="" alt="이전"></button>
+                <button type="button"><img src="" alt="다음"></button>
+            </div>
+            <ul>
+                <li><a href="#">종합/경제</a></li>
+                <li><a href="#">방송/통신</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">영자지</a></li>
+                <li><a href="#">스포츠/연예</a></li>
+                <li><a href="#">매거진/전문지</a></li>
+                <li><a href="#">지역</a></li>
+            </ul>
+            </label>
+        </article>
+        <article>
+            <h2>주제별 캐스트</h2>
+            <p>오늘 <strong>읽을만한 글</strong>주제별로 분류된 다양한 글 모음</p>
+            978개의 글 <a href="#">관심주제 설정</a>
+            <button type="button"><img src="#" alt="이전"></button>
+            <button type="button"><img src="#" alt="다음"></button>
+            <nav>
+                <ul>
+                    <li>스포츠</li>
+                    <li>엔터</li>
+                    <li>자동차</li>
+                    <li>웹툰</li>
+                    <li>경재 M</li>
+                    <li>MY구독</li>
+                    <li>레시피</li>
+                    <li>게임</li>
+                </ul>
+                <ul>
+                    <li>과학</li>
+                    <li>리빙</li>
+                    <li>건강</li>
+                    <li>책방</li>
+                    <li>부모 i</li>
+                    <li>패션뷰티</li>
+                    <li>함께iN</li>
+                </ul>
+                <ul>
+                    <li>전체</li>
+                    <li>인기</li>
+                    <li>게임</li>
+                    <li>건강</li>
+                    <li>어학</li>
+                    <li>육아</li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="" alt="재생 재생시간 0:30">
+                        <p>'지금 우리 학교는' <strong>좀비 점령, 고립된 학교! 친구들이 변하기 시작했다</strong></p>
+                        <p class="sub-name">넷플릭스</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="세븐틴 보러가기">
+                        <p>세븐틴<strong>HBD</strong></p>
+                        <p class="sub-name">V LIVE</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="트와이스 보러가기">
+                        <p>트와이스 <strong>CHAEYOUNG TV "Strawberry Santa Claus ChaeYoung"</strong></p>
+                        <p class="sub-name">V LIVE</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="네이버 시리즈온 보러가기">
+                        <p>네이버 시리즈온<strong>연말 연시 보고 싶던 베스트 영화가 무료!</strong></p>
+                        <p class="sub-name">시리즈온</p>
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <!--중략-->
+    </main>
+    <footer>
+        <div>
+            <h2><a href="#">공지사항</a></h2>
+            <a href="#">서비스 전체보기</a>
+        </div>
+        <div>
+            <h2>Creators</h2>
+            <a href="#">크리에이터</a>
+            <a href="#">스몰비지니스</a>
+        </div>            
+        <div>
+            <h2>Partners</h2>
+            <a href="#">SME 풀케어 시스템</a>
+        </div>
+        <div>
+            <h2>네이버 정책 및 약관</h2>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">제휴제안</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">네이버 정책</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <a href="#">NAVER Corp.</a>
+    </footer>
+</body>
+</html>
+
+<!--생각해보는 곳
+    1. 한페이지에 nav 태그가 여러개 들어가도 되나요?
+    MDN : 하나는 사이트 전체 탐색, 다른 하나는 현재 페이지 내 탐색으로 사용하는 등, 하나의 문서에서 여러 개의 <nav> 태그를 가질 수 있습니다. 이럴 때 aria-labelledby (en-US)를 사용해 접근성을 향상할 수 있습니다.
+    
+    2. 스킵네브 안에 로그인바로가기가 하단에 있는데 최상단으로 가지 않은이유?
+    -> 내생각 : 첫 번째로 네이버는 검색엔진이므로 로그인을 하지 않아도 제공되는 기능들이 많기 때문인 것 같습니다.
+    -> 내생각 : 두 번째로 뉴스스탠드가 제일 많이 접근하는 요소라고 생각되어서 첫 번째로 배치했다고 생각 됩니다.
+
+    3. 검색바로가기 기능은 왜 없을까요?
+    -> 음성 검색을 지원한다면 검색하기 버튼을 많이 사용 할 것 같은데..
+
+    4. 검색하다 보니 button type의 기본값으로 submit이 있고 input type에도 submit이 있는데 두 개의 차이점이 있을까요?
+
+    5. footer부분에 회사소개 인재채용 제휴제안 이 부분은 css 제거 하였을 때 보이지 않는데 js로 넣어 준 이유가 있나요?
+
+    6. NAVER Corp.가 address인 이유가 궁금합니다.
