@@ -1,0 +1,187 @@
+header {
+    width: 100vw;
+    position: relative;
+}
+header::after {
+    content: '';
+    width: 100vw;
+    top: 58px;
+    right: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #90949c;
+}
+.top-cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1208px;
+    height: 58px;
+    padding: 0 80px;
+}
+.top-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-left img {
+    margin-right: 40px;
+}
+.top-left li {
+    margin-right: 32px;
+}
+.top-left nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-right input {
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    text-indent: 30px;
+    margin-right: 17px;
+}
+.top-right a {
+    font-size: 16px;
+    color: #90949c;
+    margin-right: 13px;
+}
+.top-right button {
+    width: 120px;
+    height: 36px;
+}
+.slider {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider .slider-top {
+    width: 100vw;
+    text-align: center;
+}
+.slider .slider-top a {
+    display: inline-block;
+    margin: 24px 80px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.slider .slider-main {
+    width: 100vw;
+    position: relative;
+    margin-bottom: 500px;
+}
+.slider .slider-main a {
+    display: block;
+    width: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+
+}
+
+.slider .slider-main .one a {
+    background-image: url(../img/dan-gold-4_jhDO54BYg-unsplash.jpg);
+}
+.slider .slider-main .two a {
+    background-image: url(../img/lidye-1Shk_PkNkNw-unsplash.jpg);
+    right: 200%;
+}
+.slider .slider-main .three a {
+    background-image: url(../img/lily-banse--YHSwy6uqvk-unsplash.jpg);
+    right: 200%;
+}
+
+aside {
+    width: 100vw;
+    height: 120px;
+}
+
+aside ul {
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+aside li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+}
+aside li:last-child {
+    width: 10px;
+    height: 30px;
+}
+aside ul a{
+    position: relative;
+    font-size: 13px;
+    text-align: center;
+}
+aside ul a::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rosybrown;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -60px;
+    left: 0;
+}
+.item1::before {
+    background-image: url(../img/1.jpg);
+}
+.item2::before {
+    background-image: url(../img/2.jpg);
+}
+.item3::before {
+    background-image: url(../img/3.jpg);
+}
+.item4::before {
+    background-image: url(../img/4.jpg);
+}
+
+.item5::before {
+    background-image: url(../img/5.jpg);
+}
+.item6::before {
+    background-image: url(../img/6.jpg);
+}
+.item7::before {
+    background-image: url(../img/7.jpg);
+}
+.item8::before {
+    background-image: url(../img/8.jpg);
+}
+.item9::before {
+    background-image: url(../img/9.jpg);
+}
+.item10::before {
+    background-image: url(../img/10.jpg);
+}
+
+aside ul li:last-child::before{
+    display: none;
+    content: '';
+}
