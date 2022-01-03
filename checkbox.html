@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset {
+            border: none;
+            position: relative;
+            margin: 40px 0;
+        }
+        legend {
+            color: black;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            height: 30px;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        .radio input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        .radio label {
+            color:lightslategrey;
+            background-color: wheat;
+        }
+        .radio label:hover {
+            color:white;
+            background-color: rgb(172, 126, 45);
+        }
+        #beef:checked~.beef{
+            background-color: tomato;
+            color: whitesmoke;
+        }
+        #fork:checked~.fork{
+            background-color: tomato;
+            color: whitesmoke;
+        }
+        #chicken:checked~.chicken{
+            background-color: tomato;
+            color: whitesmoke;
+        }
+        #duck:checked~.duck{
+            background-color: tomato;
+            color: whitesmoke;
+        }
+
+        /* 소고기 하위분류 */
+        .beef-check {
+            display: block;
+        }
+        .beef-check.on {
+            display: block;
+        }
+        .beef-check input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        .beef-check label {
+            background-color: limegreen;
+            color: linen;
+        }
+        .beef-check label:hover {
+            background-color: rgb(47, 105, 47);
+            color: linen;
+        }
+        .beef-check #토시살:checked~.토시살 {
+            background-color:navajowhite;
+            color: rgb(58, 57, 57);
+            border: 1px solid red;
+        }
+        .beef-check #등심:checked~.등심 {
+            background-color:navajowhite;
+            color: rgb(58, 57, 57);
+            border: 1px solid red;
+        }
+        .beef-check #안심:checked~.안심 {
+            background-color:navajowhite;
+            color: rgb(58, 57, 57);
+            border: 1px solid red;
+        }
+        .beef-check #갈비살:checked~.갈비살 {
+            background-color:navajowhite;
+            color: rgb(58, 57, 57);
+            border: 1px solid red;
+        }
+        /* 이미지 업로드 */
+        .img-upload input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        .img-upload label {
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+            text-align: center;
+            color: rgb(121, 121, 170);
+            background-color: rgb(162, 201, 203);
+        }
+        .img-upload label:hover {
+            background-color: rgb(162, 203, 179);
+            color: rgb(20, 20, 20);
+        }
+        .post {
+            width: 400px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 30px;
+            font-weight: 700;
+            background-color: wheat;
+            color: black;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <div class="container">
+                <fieldset class="radio">
+                    <legend>좋아하는 고기를 선택하세요 (택 1)</legend>
+                    <input type="radio" id="beef" name="meat" value="beef">
+                    <label class="beef" for="beef">소고기</label>
+                    <input type="radio" id="fork" name="meat" value="fork">
+                    <label class="fork" for="fork">돼지고기</label>
+                    <input type="radio" id="chicken" name="meat" value="chicken">
+                    <label class="chicken" for="chicken">닭고기</label>
+                    <input type="radio" id="duck" name="meat" value="duck">
+                    <label class="duck" for="duck">오리</label>
+                </fieldset>
+                <fieldset class="beef-check">
+                    <legend>소고기의 종류를 고르세요</legend>
+                    <input type="checkbox" id="토시살">
+                    <label class="토시살" for="토시살">토시살</label>
+                    <input type="checkbox" id="등심">
+                    <label class="등심" for="등심">등심</label>
+                    <input type="checkbox" id="안심">
+                    <label class="안심" for="안심">안심</label>
+                    <input type="checkbox" id="갈비살">
+                    <label class="갈비살" for="갈비살">갈비살</label>
+                </fieldset>
+                <fieldset class="img-upload">
+                    <input type="file" name="pic" id="pic">
+                    <label for="pic">사진을 올려주세요</label>
+                </fieldset>
+                <button class="post">자랑하기</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
