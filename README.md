@@ -10,6 +10,9 @@
 <br>
 [naverinfo](https://sangdon1029.github.io/Publishing_study/naver_info.html) 마크업만 진행하였습니다
 
+[wadiz홈페이지](https://sangdon1029.github.io/Publishing_study/wadiz.html)
+<br>
+[버튼 만들기](https://sangdon1029.github.io/Publishing_study/checkbox.html)
 <hr>
 
 ## Google_rending-page
