@@ -1,0 +1,178 @@
+@keyframes rotate {
+    0% { 
+        transform: translateX(0)
+    } 25% {
+        transform: translate(430px,0);
+    } 50% {
+        transform: translate(430px,calc(40vh - 100%));
+    } 75% {
+        transform: translate(0% , calc(40vh - 100%));
+    } 100% {
+        transform: translate(0 , 0);
+    }
+}
+@keyframes groom {
+    0% {
+        transform: translateX(-100%);
+    }100% {
+        transform: translateX(110vw);
+    }
+}
+@keyframes groomreverse {
+    0% {
+        transform: translateX(100%);
+    }100% {
+        transform: translateX(-110vw);
+    }
+}
+
+.container{
+    position: relative;
+    .dimm{
+        z-index: -10;
+    }
+    .cloud {
+        background-image: url(../img/cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 10;
+    }
+    .cloud1 {
+        animation: groomreverse 30s infinite ;
+    }
+    .cloud2 {
+        animation: groomreverse 40s infinite ;
+        animation-direction: alternate-reverse;
+        top: 300px;
+        right: 0;
+    }
+    .cloud3 {
+        animation: groom 20s infinite ;
+        top: 500px;
+    }
+    .cloud4 {
+        animation: groomreverse 60s infinite ;
+        top: 200px;
+        right: 0;
+
+    }
+    .cloud5 {
+        animation: groom 70s infinite ;
+        top: 100px;
+    }
+    .cloud6 {
+        animation: groomreverse 55s infinite ;
+        top: 400px;
+        right: 0;
+    }
+    .cloud7 {
+        animation: groom 90s infinite ;
+        top: 700px;
+    }
+
+
+    .modalWrap{
+        z-index: 100;
+        width: 500px;
+        &:hover {
+            box-shadow: 0 30px 50px 40px rgba(0,0,0,0.5);
+        }
+        &:hover .ball {
+            width: 70px;
+            height: 70px;
+            background-color: blanchedalmond;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 20;
+            opacity: .8;
+            animation: rotate 8s infinite;
+        }
+        .contents{
+            text-align: center;
+        }
+        .btn{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            background-color: gold;
+            top: 50%;
+            transform:translate( 0, -50%);
+            text-align: center;
+            line-height: 70px;
+        }
+        .prev{
+            left: -35px;
+        }
+        .next{
+            right: -35px;
+        }
+        .overflow{
+            width: 500px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            .indicator{
+                width: 500px;
+                height: 400px;
+                display: flex;
+                flex-wrap: nowrap;
+                &.left{
+                    transform: translateX(-100%);
+                    transition: all ease 3s;
+                }
+                &.right{
+                    transform: translateX(100%);
+                    transition: all ease 3s;
+                }
+                .item {
+                    width: 500px;
+                    height: 300px;
+                    margin-top: 10px;
+                    position: absolute;
+
+                    a {
+                        position:absolute;
+                        display: block;
+                        width: 500px;
+                        height: 200px;
+                        text-align: center;
+                        line-height: 200px;
+                        background-color: aqua;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        text-indent: -99999px;
+                    }
+                    .slide1{
+                        left:-100%;
+                        background-color: aqua;
+                        background-image: url(../img/slider1.jpg);
+                    }
+                    .slide2{
+                        background-image: url(../img/slider2.jpg);
+                    }
+                    .slide3{
+                        right: -100%;
+                        background-color: aqua;
+                        background-image: url(../img/slider3.jpg);
+                    }
+                }
+            }
+        }
+        .btnClose {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top:0;
+            right:50%;
+            transform: translateX(50%) translateY(-100%);
+            border: none;
+        }
+    }
+}
