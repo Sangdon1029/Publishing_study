@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.dimm {
+    position:fixed;
+    background-color:rgba(55, 55, 59, 0.7);
+    left:0;top:0;right:0;bottom:0;
+}
+
+.modalWrap {
+    background:#fff;
+    border-radius:10px;
+    position:fixed;
+    width:700px;
+    height:40vh;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
