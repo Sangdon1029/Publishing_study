@@ -1,0 +1,269 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+th {
+  font-weight: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+i,
+em,
+address {
+  font-style: inherit;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid red;
+}
+
+fieldset {
+  border: none;
+  /* border:0 */
+  /* border: width style color */
+}
+
+input[type=text]::placeholder {
+  color: olive;
+  font-style: italic;
+}
+
+input[type=text]:focus {
+  background-color: olive;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.blind,
+hr,
+legend {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #999;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+body {
+  background-color: #f5f6f7;
+}
+
+.head-cont {
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+.head-cont h1 {
+  color: #00c850;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+.head-cont .select-box {
+  position: absolute;
+  right: 20%;
+  top: 30px;
+}
+
+#main {
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+}
+#main .all-check-cont {
+  display: flex;
+  height: 30px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  position: relative;
+  width: 800px;
+  margin-left: 70px;
+}
+#main .all-check-cont:hover {
+  color: #08a600;
+}
+#main .all-check-cont .all-check {
+  width: 1px;
+  height: 1px;
+  margin: 10px;
+  margin-top: 8px;
+  position: absolute;
+}
+#main .all-check-cont .all-check::before {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+#main .all-check-cont .all-check:checked::before {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-image: url(./pngegg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.check-item-cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.check-item-cont .one {
+  width: 1px;
+  height: 1px;
+  margin: 10px;
+  position: absolute;
+}
+.check-item-cont .one::before {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+.check-item-cont .one:checked::before {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-image: url(./pngegg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.check-item-cont label {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.check-item-cont label:hover {
+  color: #08a600;
+}
+.check-item-cont .art-one {
+  width: 500px;
+  height: 100px;
+  overflow: scroll;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 1px solid #dadada;
+  padding: 10px;
+}
+.check-item-cont .art-one h2 {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.check-item-cont .art-one p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
