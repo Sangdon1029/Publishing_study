@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+body {
+  background-color: #f5f6f7;
+}
+.head-cont {
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  h1 {
+    color: $logo;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 10px;
+  }
+  .select-box {
+    position: absolute;
+    right: 20%;
+    top: 30px;
+  }
+}

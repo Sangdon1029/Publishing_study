@@ -1,0 +1,33 @@
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  border: 2px solid $color;
+  -webkit-border-radius: calc($width/2);
+  -moz-border-radius: calc($width/2);
+  border-radius: calc($width/2);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+@mixin customCircle() {
+  width: 1px;
+  height: 1px;
+  margin: 10px;
+  position: absolute;
+  &::before {
+    @include circle(20px, #999);
+  }
+  &:checked::before {
+    @include circle(20px, #999);
+    background-image: url(./pngegg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+// 사용법
+.circle {
+  @include circle(200px, #999);
+}
