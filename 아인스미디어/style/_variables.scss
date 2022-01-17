@@ -1,0 +1,15 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'notokr';
+  src: url(../font/NotoSansKR-Regular.otf), url(../font/NotoSansKR-Bold.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat/static/Montserrat-Bold.ttf);
+}
+$color1: #fff;
+$main: #f5f6f7;
+$logo: #00c850;
+$naver_green: #08a600;
+$disabled: #8e8e8e;
+$url: '../images/';
