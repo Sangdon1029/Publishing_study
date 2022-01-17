@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+#third-view {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/background/business_01.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 70px;
+  .third-tit-cont {
+    display: flex;
+    width: 100%;
+    margin: 23px 0 56px;
+    color: $color1;
+    p {
+      margin-left: 30px;
+      &:first-child {
+        font-size: 39px;
+        font-weight: 800;
+        width: 650px;
+        height: 100px;
+      }
+      &:last-child {
+        font-size: 17px;
+        margin-left: 90px;
+        position: relative;
+        padding-top: 40px;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 70px;
+          height: 1px;
+          border-bottom: 3px solid #fff;
+          left: -90px;
+          top: 50px;
+        }
+      }
+    }
+  }
+  .third-items-cont {
+    display: flex;
+    flex-wrap: wrap;
+    height: 420px;
+    a {
+      color: $color1;
+      background-color: transparent;
+      padding: 35px 40px;
+      width: 325px;
+      height: 420px;
+      display: block;
+      transition: 0.8s ease all;
+      border: 1px solid rgb(90, 88, 88);
+      &:hover {
+        background-color: red;
+        .arrow-cont {
+          width: 43px;
+          height: 2px;
+          margin: 0 auto;
+          position: relative;
+          margin-top: 20px;
+          .arrow-bar {
+            width: 40px;
+            height: 1px;
+            border-bottom: 2px solid #fff;
+            position: absolute;
+            top: 50%;
+          }
+          .arrow-head {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -3px;
+            width: 0px;
+            height: 0px;
+            border-top: 4px solid transparent;
+            border-left: 7px solid #fff;
+            border-bottom: 4px solid transparent;
+          }
+        }
+      }
+      .one {
+        background-position: 0, 0;
+      }
+      .two {
+        background-position: -60px, 0px;
+      }
+      .three {
+        background-position: -123px, 0px;
+      }
+      .four {
+        background-position: -185px, 0px;
+      }
+      .thrid-icon {
+        background-image: url(../img/icon/ic_list_02.png);
+        width: 62px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto 30px;
+
+        .icon-list {
+          background-image: url(../img/icon/icon_list.png);
+          width: 40px;
+          height: 35px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      h3 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

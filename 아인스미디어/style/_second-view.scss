@@ -1,0 +1,121 @@
+@charset "utf-8";
+#second-view {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 70px;
+  .tit-cont {
+    display: flex;
+    width: 100%;
+    margin: 23px 0 56px;
+    p {
+      margin-left: 30px;
+      &:first-child {
+        font-size: 39px;
+        font-weight: 800;
+        width: 650px;
+        height: 100px;
+      }
+      &:last-child {
+        font-size: 17px;
+        margin-left: 90px;
+        position: relative;
+        padding-top: 40px;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 70px;
+          height: 1px;
+          border-bottom: 3px solid black;
+          left: -90px;
+          top: 50px;
+        }
+      }
+    }
+  }
+  .desc-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    .desc-items {
+      a {
+        background-color: #efefef;
+        padding: 35px 40px;
+        width: 412px;
+        height: 190px;
+        display: block;
+        transition: 0.8s ease all;
+        &:hover {
+          background-color: $color1;
+          box-shadow: 1px 1px 10px 10px rgba($color: #efefef, $alpha: 0.8);
+        }
+      }
+      p:not(:last-child) {
+        max-width: 260px;
+        margin-top: 12px;
+      }
+      .desc-cont-tit {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-size: 22px;
+          font-weight: 800;
+        }
+        .one {
+          background-position: 0, 0;
+        }
+        .two {
+          background-position: -40px, 0px;
+        }
+        .three {
+          background-position: -80px, 0px;
+        }
+        .four {
+          background-position: -120px, 0px;
+        }
+        .five {
+          background-position: -160px, 0px;
+        }
+        .six {
+          background-position: -200px, 0px;
+        }
+        .icon-list {
+          background-image: url(../img/icon/icon_list.png);
+          width: 40px;
+          height: 35px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      .arrow-cont {
+        width: 43px;
+        height: 2px;
+        position: relative;
+        margin-top: 20px;
+        .arrow-bar {
+          width: 40px;
+          height: 1px;
+          border-bottom: 2px solid black;
+          position: absolute;
+          top: 50%;
+        }
+        .arrow-head {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -3px;
+          width: 0px;
+          height: 0px;
+          border-top: 4px solid transparent;
+          border-left: 7px solid black;
+          border-bottom: 4px solid transparent;
+        }
+      }
+    }
+  }
+}
